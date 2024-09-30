@@ -1,7 +1,14 @@
 <style media="screen">
   img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 200px; /* Maksymalna szerokość obrazka */
+    max-height: 200px; /* Maksymalna wysokość obrazka */
+    float: right; /* Ustawia obrazek z prawej strony */
+    margin-left: 15px; /* Dodaje odstęp po lewej stronie obrazka */
+    margin-bottom: 15px; /* Opcjonalnie, aby dodać odstęp od tekstu */
+  }
+
+  .text-justify {
+    text-align: justify; /* Justowanie tekstu */
   }
 </style>
 
@@ -9,12 +16,12 @@
 
 <h1><%= @article.title %></h1>
 
-<p>
-<%= image_tag @article.image_url, align: 'right' %>
-<%= @article.body %> 
+<p class="text-justify">
+  <%= image_tag @article.image_url, class: "img-fluid" %>
+  <%= @article.body %> 
 </p>
 
 <% if user_signed_in? %>
-<%= link_to 'Edit', edit_article_path(@article) %>
+  <%= link_to 'Edit', edit_article_path(@article) %>
 <% end %>
 <%= link_to 'Back', articles_path %>
