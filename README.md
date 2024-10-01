@@ -15,7 +15,7 @@ Wiki App is a simple web application that allows users to create, edit, and brow
 
 - **Ruby on Rails**: The web framework used to build the application.
 - **Bootstrap 5**: Utilized for styling and responsiveness.
-- **SQLite3 **: The database for storing user and article information.
+- **SQLite3**: The database for storing user and article information.
 
 ### Prerequisites
 

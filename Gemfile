@@ -28,7 +28,7 @@ gem "jbuilder"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
-gem 'webpacker'
+gem "webpacker"
 
 
 # Reduces boot times through caching; required in config/boot.rb
@@ -49,7 +49,7 @@ group :development, :test do
 end
 
 
-gem 'devise'
+gem "devise"
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
